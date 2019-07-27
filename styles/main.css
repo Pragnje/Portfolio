@@ -565,11 +565,18 @@ main .button-hover:before {
 }
 
 @media screen and (max-width: 768px) {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 0.8rem;
+  }
   main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    padding: 0.9rem;
   }
   main .lg-heading {
     line-height: 1;
@@ -611,6 +618,9 @@ main .button-hover:before {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .boxes div {
+    padding: 1.5rem 2rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -620,6 +630,9 @@ main .button-hover:before {
   .projects {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .about-info .bio .button-hover2 {
+    letter-spacing: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

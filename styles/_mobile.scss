@@ -14,9 +14,20 @@
 
 // Tablets and Small Laptops
 @include mediaMd {
+  h1,
+  h2,
+  h3 {
+    &.sm-heading {
+      margin-bottom: 2rem;
+      padding: 0.2rem 0.8rem;
+      // background: rgba(lighten($primary-color, 2), 0.5);
+    }
+  }
+
   main {
     align-items: center;
     text-align: center;
+    padding: 0.9rem;
 
     .lg-heading {
       line-height: 1;
@@ -62,6 +73,11 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  .boxes {
+    div {
+      padding: 1.5rem 2rem;
+    }
+  }
 }
 
 // Smartphones
@@ -71,5 +87,12 @@
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  .about-info {
+    .bio {
+      .button-hover2 {
+        letter-spacing: 0;
+      }
+    }
   }
 }
