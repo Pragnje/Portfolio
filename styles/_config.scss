@@ -1,7 +1,7 @@
 $primary-color: rgb(230, 230, 230);
 $secondary-color: #4caf50;
 $show-home-image: true;
-$home-image: url("../img/background2.jpg");
+$home-image: url("../img/background.jpg");
 $background-opacity: 0.8;
 
 @mixin easeOut {
@@ -13,7 +13,10 @@ $background-opacity: 0.8;
     &#bg-img {
       background: $home-image;
       background-attachment: fixed;
-      background-size: cover;
+      // background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+      background-size: 100% 100%;
 
       &:after {
         content: "";
